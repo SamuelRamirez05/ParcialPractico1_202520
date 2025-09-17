@@ -18,8 +18,8 @@ public class SistemaSolar extends BaseEntity {
     @Enumerated(EnumType.STRING)
     private RegionType region;
     private Double ratioFuerzaMin;
-    private Long numeroStormtroopers;
+    private Long numeroStorm;
 
-    @OneToMany(mappedBy = "sistemaSolar")
+    @OneToMany(mappedBy = "sistemasolar")
     private List<PlanetaEntity> planetas = new ArrayList<>();
 }
